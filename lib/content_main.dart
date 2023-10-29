@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:paper_check_dy/content_after_class.dart';
 import 'package:paper_check_dy/content_distribution.dart';
 import 'package:paper_check_dy/content_inspection.dart';
 import 'package:paper_check_dy/content_selector_title.dart';
@@ -26,6 +27,7 @@ class _MainState extends State<Main> {
             ContentDistribution(),
             ContentInspection(),
             ContentTest(),
+            ContentAfterClass(),
           ],
         ),
       ),

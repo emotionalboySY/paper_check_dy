@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ContentTest extends StatefulWidget {
-  const ContentTest({super.key});
+class ContentAfterClass extends StatefulWidget {
+  const ContentAfterClass({super.key});
 
   @override
-  State<ContentTest> createState() => _ContentTestState();
+  State<ContentAfterClass> createState() => _ContentAfterClassState();
 }
 
-class _ContentTestState extends State<ContentTest> {
+class _ContentAfterClassState extends State<ContentAfterClass> {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -18,7 +18,7 @@ class _ContentTestState extends State<ContentTest> {
             alignment: Alignment.centerLeft,
             child: Padding(
               padding: EdgeInsets.only(left: 10.0),
-              child: Text("TEST)"),
+              child: Text("수업 후)"),
             ),
           ),
         ),
@@ -75,7 +75,7 @@ class _ContentTestState extends State<ContentTest> {
                                             ),
                                           ),
                                           Text(
-                                            "test item index #$index",
+                                            "after class item index #$index",
                                           )
                                         ],
                                       ),

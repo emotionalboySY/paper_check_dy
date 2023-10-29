@@ -24,13 +24,14 @@ class _ContentSelectorListState extends State<ContentSelectorList> {
                 color: Colors.grey.shade400,
               ),
               child: ListView(
+                scrollDirection: Axis.vertical,
                 padding: const EdgeInsets.symmetric(vertical: 5.0),
                 children: List<Widget>.generate(
-                  3,
+                  10,
                   (index) {
                     return Padding(
                       padding: const EdgeInsets.symmetric(
-                          vertical: 5.0, horizontal: 10.0),
+                          vertical: 3.0, horizontal: 7.0),
                       child: Container(
                         color: Colors.grey.shade500,
                         child: Padding(
