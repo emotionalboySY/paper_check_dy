@@ -11,7 +11,7 @@ class _ContentSelectorTitleState extends State<ContentSelectorTitle> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 60,
+      height: 52,
       child: Row(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.center,

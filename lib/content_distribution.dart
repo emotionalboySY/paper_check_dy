@@ -23,105 +23,107 @@ class _ContentDistributionState extends State<ContentDistribution> {
           ),
         ),
         SizedBox(
-          height: 180,
+          height: 142,
           width: double.infinity,
           child: DecoratedBox(
             decoration: BoxDecoration(
               color: Colors.grey.shade400,
             ),
-            child: Column(
-              children: [
-                ListView(
-                  shrinkWrap: true,
-                  children: List<Widget>.generate(
-                    3,
-                    (index) {
-                      return Padding(
-                        padding: const EdgeInsets.only(bottom: 2.0),
-                        child: SizedBox(
-                          height: 35,
-                          width: double.infinity,
-                          child: Row(
-                            children: [
-                              Expanded(
-                                child: SizedBox(
-                                  height: 30,
-                                  width: double.infinity,
-                                  child: DecoratedBox(
-                                    decoration: BoxDecoration(
-                                      color: Colors.grey.shade500,
-                                    ),
-                                    child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      children: [
-                                        Padding(
-                                          padding: const EdgeInsets.symmetric(
-                                              horizontal: 5.0),
-                                          child: SizedBox(
-                                            width: 20,
-                                            height: 20,
-                                            child: DecoratedBox(
-                                              decoration: BoxDecoration(
-                                                color: Colors.grey.shade400,
-                                              ),
-                                              child: Center(
-                                                child: Text(
-                                                  "$index.",
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  ListView(
+                    shrinkWrap: true,
+                    children: List<Widget>.generate(
+                      3,
+                      (index) {
+                        return Padding(
+                          padding: const EdgeInsets.only(bottom: 2.0),
+                          child: SizedBox(
+                            height: 35,
+                            width: double.infinity,
+                            child: Row(
+                              children: [
+                                Expanded(
+                                  child: SizedBox(
+                                    height: 30,
+                                    width: double.infinity,
+                                    child: DecoratedBox(
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey.shade500,
+                                      ),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        children: [
+                                          Padding(
+                                            padding: const EdgeInsets.symmetric(
+                                                horizontal: 5.0),
+                                            child: SizedBox(
+                                              width: 20,
+                                              height: 20,
+                                              child: DecoratedBox(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.grey.shade400,
+                                                ),
+                                                child: Center(
+                                                  child: Text(
+                                                    "$index.",
+                                                  ),
                                                 ),
                                               ),
                                             ),
                                           ),
-                                        ),
-                                        Text(
-                                          "distribution item index #$index",
-                                        )
-                                      ],
+                                          Text(
+                                            "distribution item index #$index",
+                                          )
+                                        ],
+                                      ),
                                     ),
                                   ),
                                 ),
-                              ),
-                              Align(
-                                alignment: Alignment.centerRight,
-                                child: IconButton(
-                                  padding: EdgeInsets.zero,
-                                  onPressed: () {},
-                                  icon: const Icon(
-                                    Icons.close,
-                                    color: Colors.black,
+                                Align(
+                                  alignment: Alignment.centerRight,
+                                  child: IconButton(
+                                    padding: EdgeInsets.zero,
+                                    onPressed: () {},
+                                    icon: const Icon(
+                                      Icons.close,
+                                      color: Colors.black,
+                                    ),
                                   ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
-                        ),
-                      );
-                    },
+                        );
+                      },
+                    ),
                   ),
-                ),
-                Align(
-                  alignment: Alignment.center,
-                  child: SizedBox(
-                    width: 30,
-                    height: 30,
-                    child: DecoratedBox(
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Colors.grey.shade500,
-                      ),
-                      child: InkWell(
-                        onTap: () {},
-                        child: const Center(
-                          child: Icon(
-                            Icons.add,
-                            size: 30,
+                  Align(
+                    alignment: Alignment.center,
+                    child: SizedBox(
+                      width: 30,
+                      height: 30,
+                      child: DecoratedBox(
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.grey.shade500,
+                        ),
+                        child: InkWell(
+                          onTap: () {},
+                          child: const Center(
+                            child: Icon(
+                              Icons.add,
+                              size: 30,
+                            ),
                           ),
                         ),
                       ),
                     ),
-                  ),
-                )
-              ],
+                  )
+                ],
+              ),
             ),
           ),
         ),

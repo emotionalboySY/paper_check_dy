@@ -11,7 +11,7 @@ class _ContentSelectorListState extends State<ContentSelectorList> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 180,
+      height: 168,
       child: Row(
         children: [
           Expanded(

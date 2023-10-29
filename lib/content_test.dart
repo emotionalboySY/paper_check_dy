@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ContentInspection extends StatefulWidget {
-  const ContentInspection({super.key});
+class ContentTest extends StatefulWidget {
+  const ContentTest({super.key});
 
   @override
-  State<ContentInspection> createState() => _ContentInspectionState();
+  State<ContentTest> createState() => _ContentTestState();
 }
 
-class _ContentInspectionState extends State<ContentInspection> {
+class _ContentTestState extends State<ContentTest> {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -18,7 +18,7 @@ class _ContentInspectionState extends State<ContentInspection> {
             alignment: Alignment.centerLeft,
             child: Padding(
               padding: EdgeInsets.only(left: 10.0),
-              child: Text("숙제검사)"),
+              child: Text("TEST)"),
             ),
           ),
         ),
@@ -36,7 +36,7 @@ class _ContentInspectionState extends State<ContentInspection> {
                     shrinkWrap: true,
                     children: List<Widget>.generate(
                       3,
-                      (index) {
+                          (index) {
                         return Padding(
                           padding: const EdgeInsets.only(bottom: 2.0),
                           child: SizedBox(
@@ -54,7 +54,7 @@ class _ContentInspectionState extends State<ContentInspection> {
                                       ),
                                       child: Row(
                                         mainAxisAlignment:
-                                            MainAxisAlignment.start,
+                                        MainAxisAlignment.start,
                                         children: [
                                           Padding(
                                             padding: const EdgeInsets.symmetric(
