@@ -23,6 +23,7 @@ class _ContentSelectorTitleState extends State<ContentSelectorTitle> {
                 border: Border.all(
                   color: Colors.black,
                 ),
+                color: Colors.grey.shade400,
               ),
               child: Stack(
                 children: [
@@ -69,6 +70,7 @@ class _ContentSelectorTitleState extends State<ContentSelectorTitle> {
                 border: Border.all(
                   color: Colors.black,
                 ),
+                color: Colors.grey.shade400,
               ),
               child: const Center(
                 child: Text(

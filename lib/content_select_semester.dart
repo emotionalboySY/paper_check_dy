@@ -23,8 +23,8 @@ class _ContentSemesterState extends State<ContentSemester> {
       child: FittedBox(
         fit: BoxFit.fitWidth,
         child: DecoratedBox(
-          decoration: const BoxDecoration(
-            color: Colors.grey,
+          decoration: BoxDecoration(
+            color: Colors.grey.shade400,
           ),
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8.0),

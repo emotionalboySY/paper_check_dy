@@ -21,7 +21,7 @@ class _ContentSelectorListState extends State<ContentSelectorList> {
                 border: Border.all(
                   color: Colors.black,
                 ),
-                color: Colors.grey,
+                color: Colors.grey.shade400,
               ),
               child: ListView(
                 padding: const EdgeInsets.symmetric(vertical: 5.0),
@@ -32,7 +32,7 @@ class _ContentSelectorListState extends State<ContentSelectorList> {
                       padding: const EdgeInsets.symmetric(
                           vertical: 5.0, horizontal: 10.0),
                       child: Container(
-                        color: Colors.black26,
+                        color: Colors.grey.shade500,
                         child: Padding(
                           padding: const EdgeInsets.symmetric(
                               vertical: 5.0, horizontal: 10.0),
@@ -54,13 +54,15 @@ class _ContentSelectorListState extends State<ContentSelectorList> {
                 border: Border.all(
                   color: Colors.black,
                 ),
-                color: Colors.grey,
+                color: Colors.grey.shade400,
               ),
               child: Padding(
                 padding: const EdgeInsets.all(12.0),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.black26, elevation: 0.0),
+                    backgroundColor: Colors.grey.shade500,
+                    elevation: 0.0,
+                  ),
                   onPressed: () {},
                   child: const Center(
                     child: Text(
